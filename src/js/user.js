@@ -14,23 +14,23 @@ export default class User {
     return pastYearDifference;
   }
 
-  mercuryYears() {
-    const mercuryAge = parseFloat(((this.earthAge * 365) / 88).toFixed(2));
+  mercuryYears(earthYears) {
+    const mercuryAge = parseFloat(((earthYears * 365) / 88).toFixed(2));
     return mercuryAge;
   }
 
-  venusYears() {
-    const venusAge = parseFloat(((this.earthAge * 365) / 225).toFixed(2));
+  venusYears(earthYears) {
+    const venusAge = parseFloat(((earthYears * 365) / 225).toFixed(2));
     return venusAge;
   }
 
-  marsYears() {
-    const marsAge = parseFloat(((this.earthAge * 365) / 687).toFixed(2));
+  marsYears(earthYears) {
+    const marsAge = parseFloat(((earthYears * 365) / 687).toFixed(2));
     return marsAge;
   }
 
-  jupiterYears() {
-    const jupiterAge = parseFloat(((this.earthAge * 365) / 4307).toFixed(2));
+  jupiterYears(earthYears) {
+    const jupiterAge = parseFloat(((earthYears * 365) / 4307).toFixed(2));
     return jupiterAge;
   }
 }
