@@ -23,4 +23,9 @@ export default class User {
     const venusAge = parseFloat(((this.earthAge * 365) / 225).toFixed(2));
     return venusAge;
   }
+
+  marsYears() {
+    const marsAge = parseFloat(((this.earthAge * 365) / 687).toFixed(2));
+    return marsAge;
+  }
 }
