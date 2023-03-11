@@ -9,7 +9,7 @@ describe('User', () => {
 
   test('should correctly create a user object with name, age, and 4 planetary age attributes', () => {
     expect(user1.name).toEqual('Matt');
-    expect(user1.age).toEqual(30);
+    expect(user1.earthAge).toEqual(30);
     expect(user1.mercuryAge).toEqual(7.2);
     expect(user1.venusAge).toEqual(18.6);
     expect(user1.marsAge).toEqual(56.4);
@@ -19,5 +19,8 @@ describe('User', () => {
     expect(user1.neptuneAge).toEqual(4947);
   });
 
+  test('should calculate how many years have passed since a specific user birthday', () => {
+    expect(user1.yearsUntil(40)).toEqual(10);
+  });
 })
 
