@@ -7,7 +7,7 @@ export default class User {
     this.marsAge = parseFloat((this.age * 1.88).toFixed(2));
     this.jupiterAge = parseFloat((this.age * 11.86).toFixed(2));
     this.saturnAge = parseFloat((this.age * 29.48).toFixed(2));
-    this.uranusAge = 0;
+    this.uranusAge = parseFloat((this.age * 84.07).toFixed(2));
     this.neptuneAge = 0;
   }
 
