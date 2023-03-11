@@ -11,8 +11,13 @@ export default class User {
     this.neptuneAge = parseFloat((this.earthAge * 164.9).toFixed(2));
   }
 
-    yearsUntil(birthday) {
-      let futureYearDifference = birthday - this.earthAge;
-      return futureYearDifference;
-    }
+  yearsUntil(futureBirthday) {
+    let futureYearDifference = futureBirthday - this.earthAge;
+    return futureYearDifference;
+  }
+
+  yearsSince(pastBirthday) {
+    let pastYearDifference = this.earthAge - pastBirthday;
+    return pastYearDifference;
+  }
 }
