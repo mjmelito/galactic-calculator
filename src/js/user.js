@@ -4,16 +4,6 @@ export default class User {
     this.earthAge = age;
   }
 
-  yearsUntil(futureBirthday) {
-    let futureYearDifference = futureBirthday - this.earthAge;
-    return futureYearDifference;
-  }
-
-  yearsSince(pastBirthday) {
-    let pastYearDifference = this.earthAge - pastBirthday;
-    return pastYearDifference;
-  }
-
   mercuryYears(earthYears) {
     const mercuryAge = parseFloat(((earthYears * 365) / 88).toFixed(2));
     return mercuryAge;
@@ -32,5 +22,15 @@ export default class User {
   jupiterYears(earthYears) {
     const jupiterAge = parseFloat(((earthYears * 365) / 4307).toFixed(2));
     return jupiterAge;
+  }
+
+  yearsUntil(futureBirthday) {
+    let futureYearDifference = futureBirthday - this.earthAge;
+    return futureYearDifference;
+  }
+
+  yearsSince(pastBirthday) {
+    let pastYearDifference = this.earthAge - pastBirthday;
+    return pastYearDifference;
   }
 }
