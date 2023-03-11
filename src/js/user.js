@@ -18,4 +18,9 @@ export default class User {
     const mercuryAge = parseFloat(((this.earthAge * 365) / 88).toFixed(2));
     return mercuryAge;
   }
+
+  venusYears() {
+    const venusAge = parseFloat(((this.earthAge * 365) / 225).toFixed(2));
+    return venusAge;
+  }
 }
