@@ -22,5 +22,9 @@ describe('User', () => {
   test('should calculate how many years until a specific user birthday', () => {
     expect(user1.yearsUntil(40)).toEqual(10);
   });
+
+  test('should calculate how many years have passed since a specific user birthday', () => {
+    expect(user1.yearsSince(25)).toEqual(5);
+  });
 })
 
