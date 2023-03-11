@@ -19,7 +19,7 @@ describe('User', () => {
     expect(user1.neptuneAge).toEqual(4947);
   });
 
-  test('should calculate how many years have passed since a specific user birthday', () => {
+  test('should calculate how many years until a specific user birthday', () => {
     expect(user1.yearsUntil(40)).toEqual(10);
   });
 })
