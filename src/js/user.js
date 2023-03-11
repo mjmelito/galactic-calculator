@@ -28,4 +28,9 @@ export default class User {
     const marsAge = parseFloat(((this.earthAge * 365) / 687).toFixed(2));
     return marsAge;
   }
+
+  jupiterYears() {
+    const jupiterAge = parseFloat(((this.earthAge * 365) / 4307).toFixed(2));
+    return jupiterAge;
+  }
 }
