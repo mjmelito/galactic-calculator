@@ -42,5 +42,12 @@ describe('User', () => {
     expect(user1.marsYears(user1.yearsUntil(40))).toEqual(5.31);
     expect(user1.jupiterYears(user1.yearsUntil(40))).toEqual(0.85);
   });
+
+  test('should calculate years since past birthday in planet years', () => {
+    expect(user1.mercuryYears(user1.yearsSince())).toEqual(20.73);
+    expect(user1.venusYears(user1.yearsSince())).toEqual(8.11);
+    expect(user1.marsYears(user1.yearsSince())).toEqual(2.66);
+    expect(user1.jupiterYears(user1.yearsSince())).toEqual(0.42);
+  });
 })
 
