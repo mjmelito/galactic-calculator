@@ -10,15 +10,11 @@ describe('User', () => {
   test('should correctly create a user object with name, age, and 4 planetary age attributes', () => {
     expect(user1.name).toEqual('Matt');
     expect(user1.age).toEqual(30);
-    expect(user1.mercuryAge).toEqual(0);
+    expect(user1.mercuryAge).toEqual(7.2);
     expect(user1.venusAge).toEqual(0);
     expect(user1.marsAge).toEqual(0);
     expect(user1.jupiterAge).toEqual(0);
-
   });
 
-  test('should correctly calculate users age in years on Mercury', () => {
-    expect(user1.mercuryAge).toEqual(7.2);
-  })
 })
 
