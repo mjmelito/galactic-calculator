@@ -14,6 +14,9 @@ describe('User', () => {
     expect(user1.venusAge).toEqual(18.6);
     expect(user1.marsAge).toEqual(56.4);
     expect(user1.jupiterAge).toEqual(355.8);
+    expect(user1.saturnAge).toEqual(884.4);
+    expect(user1.uranusAge).toEqual(0);
+    expect(user1.neptuneAge).toEqual(0);
   });
 
 })
