@@ -8,9 +8,8 @@ export default class User {
     this.jupiterAge = 0;
   }
 
-  // mercuryMultiplier() {
-  //   (user1.mercuryAge) = this.age * .24;
+  mercuryMultiplier() {
     
-  // }
+  }
 
 }
